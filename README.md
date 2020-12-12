@@ -40,8 +40,8 @@ Aplicação consiste em fazer um sistema de fluxo de caixa; onde tenho que cadas
 - yarn ou npm install.
 - yarn add sequelize ou npm install --save sequelize
 - npx sequelize db:create `**cria o banco de dados**`.
-abra a pasta database, localizada na pasta backend e importe o arquivo Dumpt_figun.sql para o banco de dados
-`**figun**` que acabaras de criar no passo anterior.
+abra a pasta database, e importe o arquivo Dumpt_firgun.sql para o banco de dados
+`**firgun**` que acabaras de criar no passo anterior.
 - execute yarn dev ou npm run dev para startar o servidor
 ```
 
