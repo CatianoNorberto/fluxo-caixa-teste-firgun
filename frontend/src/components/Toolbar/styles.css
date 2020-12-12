@@ -1,0 +1,15 @@
+.toolbar {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .toolbar {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,32 @@
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left img {
+  width: 120px;
+  margin-right: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  margin: 0 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #111111;
+}
+
+.nav-item .active {
+  color: #ebb021;
+}
+
+.nav-item a:hover {
+  color: #ebb021;
+}

@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: none;
+  padding: 0;
+}
+
+.nav .btn-logout {
+  border: none;
+  background: none;
+  font-size: 17px;
+  transition: 0.2s;
+  color: #ffffff;
+}
+
+.nav .btn-logout:hover {
+  color: #ff872c;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+  .nav .btn-logout {
+    margin-top: 10px;
+  }
+}

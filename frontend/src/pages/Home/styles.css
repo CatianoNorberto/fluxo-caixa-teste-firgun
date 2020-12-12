@@ -1,0 +1,291 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 230px;
+  padding: 20px 0;
+
+  background: #5636d3;
+  position: relative;
+}
+
+.statistics {
+  width: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 17%;
+}
+
+.input,
+.output,
+.balance {
+  width: 340px;
+  height: 130px;
+  padding: 20px;
+
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.input h3,
+.output h3,
+.balance h3 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #959aab;
+}
+
+.balance {
+  background: #ff872c;
+}
+
+.balance h3,
+.balance .flex-group strong {
+  color: #fff !important;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-group strong {
+  font-size: 16px;
+  color: #8d8d8d;
+}
+
+.buttons-group {
+  width: 80%;
+  margin-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns-content {
+  width: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btns-content button {
+  width: 200px;
+  padding: 5px;
+
+  background: #437f16;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.btns-content button:hover {
+  background: #5636d3;
+}
+
+.reports {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table-head {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  color: #8d8d8d;
+  font-weight: bold;
+}
+
+.description,
+.category,
+.inputs,
+.exits,
+.exits,
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.description span,
+.category span,
+.inputs span,
+.exits span,
+.exits span,
+.date span {
+  display: none;
+}
+
+.description {
+  width: 350px;
+}
+.category {
+  width: 200px;
+}
+
+.date {
+  width: 150px;
+}
+.inputs {
+  width: 130px;
+}
+.exits {
+  width: 100px;
+}
+.balances {
+  width: 120px;
+}
+.body-scroll {
+  padding-bottom: 40px;
+}
+
+.table-body {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+
+  padding: 20px 30px;
+
+  background: #fff;
+  color: #959aab;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.modal-data {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-data h4 {
+  color: #5636d3;
+  font-size: 18px;
+}
+
+.modal-data form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modal-data form label {
+  color: #444444;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.modal-data form input {
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  /* height: 30px; */
+  padding: 10px 15px;
+  font-size: 15px;
+}
+.modal-data button.btn-r {
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #f73030;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-data button.btn-g {
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #076b34;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .statistics {
+    width: 100%;
+    flex-direction: column;
+
+    position: relative;
+    margin-top: -110px;
+  }
+  .buttons-group {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .btns-content {
+    width: 100%;
+  }
+  .btns-content button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input,
+  .output,
+  .balance {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .table-body {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .reports {
+    width: 100%;
+  }
+  .table-head {
+    display: none;
+  }
+
+  .description,
+  .category,
+  .inputs,
+  .exits,
+  .exits,
+  .date {
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+  }
+
+  .description span,
+  .category span,
+  .inputs span,
+  .exits span,
+  .exits span,
+  .date span {
+    display: block;
+  }
+}
